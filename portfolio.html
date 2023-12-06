@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   *{
+     margin:0;
+     padding:0;
+     box-sixing:border-box;
+     font-family:Arial,Helvetica,sans-serif;
+    }
+   a{
+    text-decoration:none;
+    }
+	.hero{
+          height:100vh;
+          width:100vw;
+          background-image: url('https://i.pinimg.com/564x/c7/a4/5f/c7a45f7e039903361ed7ab980527262f.jpg');
+          height:100vh;
+          width:100vw;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+     nav{
+         display:flex;
+         justify-content:space-between;
+         align-items:center;
+         padding:30px 100px;
+        }
+
+     .logo{
+           font-size:40px;
+           color:#fd4765;
+           font-style:italic;
+          }
+    nav ul li a{
+        color:#1d1d24;
+        position:relative;
+        padding:5px 0;
+        font-weight:bold;
+         }
+   nav ul li{
+       display:inline-block;
+         list-style:none;
+         padding:10px 20px;
+          }
+    nav ul li a:hover{
+     color:#fd4766;
+      }
+      nav ul li a::after{
+        content:"";
+     bottom:0;
+    left:0;
+    width:0;
+   position:absolute;
+    height:3px;
+     background:#fd4766;
+    transition:.3s;
+    }
+   nav ul li a:hover::after{
+   width:100%;
+     }
+    .btn{
+      color:#fff;
+      font-size:16px;
+       text-transform:uppercase;
+     background:#fd4766;
+       padding:10px 30px;
+      border-radius:500px;
+      display:inline-block;
+       font-weight:500;
+       transition: all .4s ease-in-out;
+        border:2px solid #fd4766;
+      }
+     .btn:hover{
+     background:transparent;
+    color:#fd4766;
+     }
+      .detail{
+      padding:10px;
+     position:absolute;
+      top:20%;
+    }
+    .detail h1{
+    color:#1f1f25;
+   font-size:70px;
+    font-weight:700;
+     line-height:70px;
+    }
+      .detail h1 span{
+     color:#fd4766;
+      }
+    .detail p{
+     color:#1f1f25;
+      font-size:18px;
+      margin-top:25px;
+      margin-bottom:30px;
+      }
+    .image img{
+       display:block;
+      width:100px;
+   height:auto;
+  }
+.image{
+width:30%;
+height:80%;
+position:absolute:
+bottom:0;
+right:200px;
+}
+.body {
+ background-image: url('https://i.pinimg.com/564x/c7/a4/5f/c7a45f7e039903361ed7ab980527262f.jpg');
+ height:100vh;
+ width:100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ .heading-4{
+text-color: purple;
+family-weight:bold;
+margin-left:25px;
+}
+#space {
+border-radius:5px;
+translate : transform 0.2s ease-in-out;
+box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.1);
+
+}
+td {
+padding:0 15px;
+}
+.about{
+background-color:pink;
+padding:20px;
+
+}
+
+img{
+box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.1);
+}
+.myself{
+background-color:#990000;
+padding:10px;
+margin-top:20px;
+}
+
+#social{
+margin:15px;
+margin-top:25px;
+background-color:black;
+}
+.social{
+position:relative;
+left:190px;
+}
+.end{
+background-color:white;
+text-color:white;
+margin-top:15px;
+}
+
+   @keyframes moveImage {
+      0% {
+        transform: translateX(0); 
+      }
+      50% {
+        transform: translateX(100px); 
+      }
+      100% {
+        transform: translateX(0); 
+      }
+	  
+    }
+
+    
+    .moving-image {
+      animation: moveImage 3s infinite; 
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> harini's portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional: Bootstrap Icons (if needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!-- Icon to the page -->
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/2f/de/dc/2fdedc0f4a96e7a11435cfcc76ba4770.jpg">
+	<!-- Google font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	  <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/css/uikit.min.css" />
+	<!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit-icons.min.js"></script>
+	 <!-- fontawesome UIkit  -->
+	<script src="https://kit.fontawesome.com/83ccd2ef5b.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+<div class="hero">
+<nav>
+<p class="logo">HS &#x2328;</p>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</div>
+<div class="detail">
+<h1> Hey I'm<span>Harini</span></h1>
+<p> this is my official website to show all details  <br> about web development </p>
+ <table border="0">
+	 <tr>
+	 <th><i class="fab fa-facebook-f" style="color:#e1e1e1;" id="social"> </i> </th>
+	 <th><i class="fab fa-instagram" style="color:#e1e1e1;" id="social"> </i> </th>
+	 <th><i class="fab fa-twitter" style="color:#e1e1e1;" id="social"> </i> </th>
+	 <th><i class="fab fa-youtube" style="color:#e1e1e1;" id="social"> </i> </th>
+     </tr>
+	 </table>
+<a href="#" class="btn">about us</a>
+ <div class="list of cources">
+  <h4 class="heading-4" style="color:purple;"> FrontEnd </h4>
+  <table border="0">
+  <tr>         
+  <td><img src="https://i.pinimg.com/564x/48/52/6a/48526a98493907f2dc33893a718ba1df.jpg" width="400" height="250" style="padding:10px;"  id="space" class="moving-image"><h3>HTML CSS</h3> <p> 
+HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are fundamental technologies for building and designing web pages. Let's explore some key concepts and theories related to HTML and CSS.</p><button class="bg-primary text-white p-2">click here to know more</button></td>
+  <td><img src="https://i.pinimg.com/564x/3f/f3/38/3ff338fded7cab6c231606b35ebe18ab.jpg" width="400" height="250" style="padding:10px;"  id="space" class="moving-image"> <h3> java script </h3> <p> JavaScript is a high-level, versatile programming language primarily known for its role in web development. It is a crucial component for creating dynamic and interactive content on websites. Below are some key concepts and aspects of JavaScript:</p><button class="bg-primary text-white p-2">click here to know more</button></td>
+  <td><img src="https://i.pinimg.com/564x/cb/a0/b8/cba0b89d2bf2d96a1ed26edb5849f804.jpg" width="500" height="350" style="padding:10px;" id="space" class="moving-image"><h3>REACT</h3><p>
+React is an open-source JavaScript library used for building user interfaces, interactive user experience. Developed and maintained by Facebook . it is the best language to create an amazing website</p><button class="bg-primary text-white p-2">click here to know more</button></td>
+  </tr>
+  </table>
+  
+  
+   <h4 class="heading-4" style="color:purple;"> backend requiements</h4>
+  <table border="0">
+  <tr>
+  <td><img src="https://i.pinimg.com/564x/5e/1d/e8/5e1de82524efa4fca768e56fcf2d0911.jpg" width="400" height="250" style="padding:10px;"  id="space" class="moving-image" ><h3>PYTHON</h3> <p> 
+Python is a high-level, interpreted programming language known for its simplicity and readability.it is the easiest programming language to learn. Here are some key aspects and theories related to Python:</p><button class="bg-primary text-white p-2">click here to know more</button></td>
+  <td><img src="https://i.pinimg.com/564x/c4/8a/19/c48a192493222934963b14a14f71df36.jpg" width="400" height="250" style="padding:10px;"  id="space" class="moving-image" ><h3>JAVA</h3> <p> 
+Java is a widely used, object-oriented programming language that was designed to be platform-independent, meaning that Java programs can run on any device that has a Java Virtual Machine (JVM). Here are some key aspects and theories related to Java:</p><button class="bg-primary text-white p-2">click here to know more</button></td>
+  <td><img src="https://i.pinimg.com/564x/26/f6/35/26f6359c009caad13a10171101682679.jpg" width="300" height="100" style="padding:10px;"  id="space" class="moving-image" ><h3>DATA BASE</h3> <p> Database theory is a field of computer science that explores the principles, concepts, and methodologies for querying databases. Understanding database theory is crucial for developing efficient, scalable, and maintainable databases. </p><button class="bg-primary text-white p-2">click here to know more</button></td>
+  </tr>
+  </table>
+  
+  <div class="about">
+  
+  <table>
+  <h2>ABOUT US</h2>
+  <td><p>  Web developers are professionals who specialize in creating and maintaining websites and web applications. Their work involves both the design and functionality of websites, ensuring that they are visually appealing, user-friendly, and functionally robust. Web development is a multidisciplinary field that encompasses various technologies, languages, and frameworks. </p></td>
+  </table>
+  </div>
+</div>
+
+<div class="image">
+<img src="" aalt="">
+</div>
+<div class="myself">
+<h2 style="color:white";><center>ABOUT ME</center></h2>
+<center><img src="https://i.pinimg.com/564x/87/5b/07/875b07d6fb4b3ae0fddb55e16579c463.jpg" width="250" height="250" style= "border-radius: 50%"; ></center>
+<h3 style="color:white";><center>HII:) i'm HARINI</center></h3>
+<h2 style="color:gray";><center>WEB DEVELOPER</center></h2>
+<h6 style="color:white"; ><center>A web developer is a professional who specializes in the development of websites and web applications. </center></h6>
+</div>
+<div class="end" style="background-color:black"><center>
+<button style=" background-color: #FFA500;
+      color: #800080; 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+	  margin-top:15px;">KNOW MORE</button>
+<h3 style="color:white">contact details</h3>
+<p style="color:white">MAIL:harini@gmail.com</p>
+<p style="color:white">ph:987654345</p>
+
+
+
+</center></div>
+</body>
+</html>
